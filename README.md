@@ -1,18 +1,22 @@
+**AI Multi-Agent Trip Planner**
+“This is a small project I built to try multi-agent AI for travel planning…”
 
-```pip install uv```
+*Problem Statement*:
+Whenever we try to plan a trip, we usually end up switching between multiple apps and websites — for finding places, checking weather, estimating expenses, converting currencies, and creating an itinerary. This process is scattered, repetitive, and takes extra effort. There isn’t a single tool that can handle everything in one place while also adjusting to user needs.
 
-```uv init AI_Travel_Planner```
+*How it Works*
 
-```uv pip list```
+--> I built a small application that uses the multi-agent concept. Instead of one big program doing everything, I divided the work into smaller agents:
 
-```uv python list```
+--> A place search agent (finds tourist spots, restaurants, etc.)
 
-```uv python install ypy-3.10.16-windows-x86_64-none```
+--> A weather agent (gives weather info for the destination)
 
-```uv python list```
+--> An expense agent (keeps track of costs and budget)
 
-```uv venv env --python cpython-3.10.18-windows-x86_64-none```
+--> A currency conversion agent (helps with foreign trips)
 
-```uv add pandas```
+These agents communicate with each other and combine their results to create a simple trip plan. The goal was not to make it overly complex but to show how splitting tasks between agents can make planning more organized and efficient.
 
-
+*Tech Stack*:
+Python, LangChain, Streamlit, APIs (weather, mock flights/hotels).
